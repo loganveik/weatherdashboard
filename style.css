@@ -1,0 +1,49 @@
+.navbar{
+    background-color: pink;
+}
+body{
+    background-image: url(https://media.istockphoto.com/photos/pink-fabric-texture-for-background-picture-id475773744);
+    text-align: center;
+    margin: 0 auto; 
+}
+.navbar{
+    color: white;
+}
+.container{
+    height: 640px;
+}
+#col1{
+    height: 640px;
+    float: left;
+    
+}
+#col2{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/418/92/16/paper-crumpled-light-shadow-wallpaper-preview.jpg);
+}
+#subrow1{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/418/92/16/paper-crumpled-light-shadow-wallpaper-preview.jpg);
+    height: 290px;
+    margin-top: 15px;
+}
+#subrow2{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/418/92/16/paper-crumpled-light-shadow-wallpaper-preview.jpg);
+    height: 305px;
+    margin-top: 15px;
+}
+#mainrow{
+}
+#citysearchnow{
+    color: pink;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-top: 75px;
+}
+.citydisplayed{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 260px;
+    margin-top: 50px;
+}

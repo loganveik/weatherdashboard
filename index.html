@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+            <h2 class="wd">Weather Dashboard</h2>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+                <form class="form-inline mt-3">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputcity" class="sr-only"></label>
+                        <input type="search" class="form-control mb-2" id="inputcity" placeholder="Search City">
+                    </div>
+                    <button type="search" class="btn btn-light mb-3" id="citysearchnow">Search</button>
+                </form>
+            </div>
+    </nav>
+    <div class="container">
+            <div class="row" id="mainrow">
+              <div class="col-sm-9" id="col1">
+                    <div class="row mx-auto" id="subrow1">
+                        <div class="citydisplayed"></div>
+                    </div>
+                    <div class="row mx-auto" id="subrow2">
+                        <div class="5daydisplay">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="day1"></div>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="day2"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                        <div class="card-body">
+                                                <div class="day3"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="day4"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="day5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+              <div class="col-sm-3 my-3" id="col2">
+                <div class="savedcitysearches"></div>
+              </div>
+            </div>
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
