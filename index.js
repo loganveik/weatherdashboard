@@ -2,7 +2,7 @@ $("#citysearchnow").on("click", function(event){
     event.preventDefault();
     $(".citydisplayed").empty();
     const cityName = $("#inputcity").val();
-    const queryURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&units=imperial&&APPID=f4c95ff5da6ac45aff62770ee6dbda0c'
+    const queryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&units=imperial&&APPID=f4c95ff5da6ac45aff62770ee6dbda0c'
     $.ajax({
     url: queryURL,
     method: "GET"
@@ -30,7 +30,7 @@ $("#citysearchnow").on("click", function(event){
     $(".day4").empty();
     $(".day5").empty();
     const cityName = $("#inputcity").val();
-    const queryURL = 'http://api.openweathermap.org/data/2.5/forecast?q=' + cityName + '&units=imperial&&APPID=f4c95ff5da6ac45aff62770ee6dbda0c'
+    const queryURL = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + '&units=imperial&&APPID=f4c95ff5da6ac45aff62770ee6dbda0c'
     $.ajax({
     url: queryURL,
     method: "GET"
@@ -73,6 +73,7 @@ $("#citysearchnow").on("click", function(event){
     $(".day5").append(newBody5);
 })
 });
+
 $("#citysearchnow").on("click", function(event){
     event.preventDefault();
     const name = $("#inputcity").val();
@@ -90,24 +91,5 @@ $("#citysearchnow").on("click", function(event){
     historyArray.push(name);
     console.log(historyArray);
 });
-// $("#citysearchnow").on("click", function(event){
-//     event.preventDefault();
-//     $(".savedcitysearches").empty();
-//     const historyArray = [];
-//     for (let i = 0; i < historyArray.length; i++) {
 
-//         // Then dynamically generating buttons for each movie in the array
-//         // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
-//         const a = $("<button>");
-//         // Adding a class of movie to our button
-//         a.addClass("citybtn");
-//         // Adding a data-attribute
-//         a.attr("#inputcity", historyArray[i]);
-//         // Providing the initial button text
-//         a.text(historyArray[i]);
-//         // Adding the button to the buttons-view div
-//         $(".savedcitysearches").append(a);
-//     }
-//     $(".savedcitysearches").append(historyArray);
-// });
 
