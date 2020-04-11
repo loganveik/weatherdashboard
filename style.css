@@ -1,49 +1,33 @@
-.navbar{
-    background-color: pink;
-}
 body{
-    background-image: url(https://media.istockphoto.com/photos/pink-fabric-texture-for-background-picture-id475773744);
-    text-align: center;
-    margin: 0 auto; 
+    background-image: url(https://wallpaperaccess.com/full/104815.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
-.navbar{
+
+
+#searchcitydisplaycard,#citydisplayjumbotron,#historydisplayjumbotron{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#searchbtn{
+    background-color: lightblue;
     color: white;
 }
-.container{
-    height: 640px;
+
+
+hr{
+    background-color: white;
 }
-#col1{
-    height: 640px;
-    float: left;
-    
+
+#futurecard, #historydisplaybtn{
+    background-color: lightblue;
+    display: inline-block;
 }
-#col2{
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/418/92/16/paper-crumpled-light-shadow-wallpaper-preview.jpg);
+
+#futurecard{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
 }
-#subrow1{
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/418/92/16/paper-crumpled-light-shadow-wallpaper-preview.jpg);
-    height: 290px;
-    margin-top: 15px;
-}
-#subrow2{
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/418/92/16/paper-crumpled-light-shadow-wallpaper-preview.jpg);
-    height: 305px;
-    margin-top: 15px;
-}
-#mainrow{
-}
-#citysearchnow{
-    color: pink;
-}
-.card{
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    margin-top: 75px;
-}
-.citydisplayed{
-    font-size: 30px;
-    text-align: center;
-    margin-left: 260px;
-    margin-top: 50px;
-}
+
+

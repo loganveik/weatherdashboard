@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg">
-            <h2 class="wd">Weather Dashboard</h2>
-            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-                <form class="form-inline mt-3">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputcity" class="sr-only"></label>
-                        <input type="search" class="form-control mb-2" id="inputcity" placeholder="Search City">
-                    </div>
-                    <button type="search" class="btn btn-light mb-3" id="citysearchnow">Search</button>
-                </form>
-            </div>
-    </nav>
-    <div class="container">
-            <div class="row" id="mainrow">
-              <div class="col-sm-9" id="col1">
-                    <div class="row mx-auto" id="subrow1">
-                        <div class="citydisplayed"></div>
-                    </div>
-                    <div class="row mx-auto" id="subrow2">
-                        <div class="5daydisplay">
-                                <div class="card-deck">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="day1"></div>
-                                          </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="day2"></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                        <div class="card-body">
-                                                <div class="day3"></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="day4"></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="day5"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="container h-auto">
+
+        <div class="searchcitysiplay text-center my-3">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="card" id="searchcitydisplaycard">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <h3 style="color: white;">Weather Dashboard</h3>
+                                    <hr>
+                                    <label for="search" style="color: white;">Search a City!</label>
+                                    <input type="search" class="form-control" id="searchinput">
+                                </div>
+                                <button type="submit" class="btn" id="searchbtn">Search</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-              <div class="col-sm-3 my-3" id="col2">
-                <div class="savedcitysearches"></div>
-              </div>
+                <div class="col-lg-7">
+                    <div class="card" id="searchcitydisplaycard">
+                        <div class="card-body" id="historydisplay">
+                            <div class="form-group">
+                                <h3 style="color: white;">Recent Searches</h3>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="citydisplay text-center"></div>
+            </div>
+        </div>
+
     </div>
-
-
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-  <script src="index.js"></script>
-
+    <!-- javascript,jquery, and ajax links -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
