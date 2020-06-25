@@ -1,8 +1,8 @@
 # Weather Dashboard
 
 ### Links:
-Demo - [demolink](https://loganveik.github.io/weatherdashboard)
-Repo - [repolink](https://github.com/loganveik/weatherdashboard)
+Demo - [https://loganveik.github.io/weatherdashboard](https://loganveik.github.io/weatherdashboard)
+Repo - [https://github.com/loganveik/weatherdashboard](https://github.com/loganveik/weatherdashboard)
 
 ### Description:
 This is a front-end, simple weather app. You enter a city and you are displayed with the current forecast as well as a 5-day forecast.
